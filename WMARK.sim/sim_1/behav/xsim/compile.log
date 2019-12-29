@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module image_read
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/adity/Downloads/tb_simulation.v" into library xil_defaultlib
+ERROR: [VRFC 10-452] cannot open include file parameter.v [C:/Users/adity/Downloads/tb_simulation.v:6]
+INFO: [VRFC 10-311] analyzing module tb_simulation
+ERROR: [VRFC 10-2787] module tb_simulation ignored due to previous errors [C:/Users/adity/Downloads/tb_simulation.v:8]

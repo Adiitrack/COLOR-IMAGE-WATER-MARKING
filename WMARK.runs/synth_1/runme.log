@@ -1,0 +1,51 @@
+
+*** Running vivado
+    with args -log tb_simulation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_simulation.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source tb_simulation.tcl -notrace
+Command: synth_design -top tb_simulation -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10844 
+WARNING: [Synth 8-2306] macro INPUTFILENAME redefined [C:/Users/adity/Desktop/WATER/parameter.v:5]
+WARNING: [Synth 8-2507] parameter declaration becomes local in image_read with formal parameter declaration list [C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v:41]
+WARNING: [Synth 8-2507] parameter declaration becomes local in image_read with formal parameter declaration list [C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v:42]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 370.410 ; gain = 112.563
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_simulation' [C:/Users/adity/Desktop/WATER/watermarkvhdl/tb_simulation.v:8]
+INFO: [Synth 8-6157] synthesizing module 'image_read' [C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v:6]
+	Parameter WIDTH bound to: 768 - type: integer 
+	Parameter HEIGHT bound to: 512 - type: integer 
+	Parameter INFILE bound to: kodim23.hex - type: string 
+	Parameter START_UP_DELAY bound to: 100 - type: integer 
+	Parameter HSYNC_DELAY bound to: 160 - type: integer 
+	Parameter VALUE bound to: 100 - type: integer 
+	Parameter THRESHOLD bound to: 90 - type: integer 
+	Parameter SIGN bound to: 0 - type: integer 
+	Parameter sizeOfWidth bound to: 8 - type: integer 
+	Parameter sizeOfLengthReal bound to: 1179648 - type: integer 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_VSYNC bound to: 2'b01 
+	Parameter ST_HSYNC bound to: 2'b10 
+	Parameter ST_DATA bound to: 2'b11 
+ERROR: [Synth 8-4556] size of variable 'temp_BMP' is too large to handle; the size of the variable is 37748736, the limit is 1000000 [C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v:60]
+ERROR: [Synth 8-6156] failed synthesizing module 'image_read' [C:/Users/adity/Desktop/WATER/watermarkvhdl/image_read.v:6]
+ERROR: [Synth 8-6156] failed synthesizing module 'tb_simulation' [C:/Users/adity/Desktop/WATER/watermarkvhdl/tb_simulation.v:8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 458.809 ; gain = 200.961
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+4 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 22 21:01:52 2019...

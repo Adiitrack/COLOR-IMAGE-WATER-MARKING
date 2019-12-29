@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../Image_Watermarking/Image_Watermarking.srcs/sources_1/new/read_image_VHDL.vhd" \
+"../../../../../../Image_Watermarking/Image_Watermarking.srcs/sources_1/new/tb_read_image_VHDL.vhd" \
+
+# Do not sort compile order
+nosort

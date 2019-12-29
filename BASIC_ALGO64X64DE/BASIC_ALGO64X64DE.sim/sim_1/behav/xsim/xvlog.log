@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/adity/Desktop/WATER/BASIC_ALGO64X64DE/BASIC_ALGO64X64DE.srcs/sim_1/new/READ_IMAGE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module READ_IMAGE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/adity/Desktop/WATER/BASIC_ALGO64X64DE/BASIC_ALGO64X64DE.srcs/sim_1/new/WRITE_IMAGE.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WRITE_IMAGE
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/adity/Desktop/WATER/BASIC_ALGO64X64DE/BASIC_ALGO64X64DE.srcs/sim_1/new/tb_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_simulation

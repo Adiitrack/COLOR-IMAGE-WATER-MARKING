@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Dec 16 15:16:24 2019
+# Process ID: 5308
+# Current directory: C:/Users/adity/Desktop/WATER/basic_algo64x64/basic_algo64x64.runs/impl_1
+# Command line: vivado.exe -log tb_simulation.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source tb_simulation.tcl -notrace
+# Log file: C:/Users/adity/Desktop/WATER/basic_algo64x64/basic_algo64x64.runs/impl_1/tb_simulation.vdi
+# Journal file: C:/Users/adity/Desktop/WATER/basic_algo64x64/basic_algo64x64.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source tb_simulation.tcl -notrace

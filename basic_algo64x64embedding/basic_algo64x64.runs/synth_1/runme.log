@@ -1,0 +1,670 @@
+
+*** Running vivado
+    with args -log tb_simulation.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_simulation.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source tb_simulation.tcl -notrace
+Command: synth_design -top tb_simulation -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1568 
+WARNING: [Synth 8-2507] parameter declaration becomes local in image_read with formal parameter declaration list [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:42]
+WARNING: [Synth 8-2507] parameter declaration becomes local in image_read with formal parameter declaration list [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:43]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 370.836 ; gain = 113.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tb_simulation' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v:8]
+INFO: [Synth 8-6157] synthesizing module 'image_read' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:3]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter HEIGHT bound to: 8 - type: integer 
+	Parameter INFILE bound to: lena_colour.mem - type: string 
+	Parameter START_UP_DELAY bound to: 100 - type: integer 
+	Parameter HSYNC_DELAY bound to: 0 - type: integer 
+	Parameter VALUE bound to: 0 - type: integer 
+	Parameter SIGN bound to: 1 - type: integer 
+	Parameter sizeOfWidth bound to: 8 - type: integer 
+	Parameter sizeOfLengthReal bound to: 192 - type: integer 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_VSYNC bound to: 2'b01 
+	Parameter ST_HSYNC bound to: 2'b10 
+	Parameter ST_DATA bound to: 2'b11 
+INFO: [Synth 8-3876] $readmem data file 'lena_colour.mem' is read successfully [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:82]
+INFO: [Synth 8-3876] $readmem data file 'embedded_bit.mem' is read successfully [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:83]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:177]
+WARNING: [Synth 8-3848] Net S in module/entity image_read does not have driver. [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:30]
+WARNING: [Synth 8-3848] Net LOC in module/entity image_read does not have driver. [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'image_read' (1#1) [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:3]
+WARNING: [Synth 8-350] instance 'u_image_read' of module 'image_read' requires 18 connections, but only 17 given [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v:36]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v:58]
+INFO: [Synth 8-6157] synthesizing module 'image_write' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:4]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter HEIGHT bound to: 8 - type: integer 
+WARNING: [Synth 8-639] system function call 'fopen' not supported [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:87]
+WARNING: [Synth 8-6014] Unused sequential element l_reg was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:32]
+WARNING: [Synth 8-6014] Unused sequential element m_reg was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:33]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[0] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[1] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[2] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[3] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[4] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[5] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[6] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[7] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[8] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[9] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[10] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[11] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[12] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[13] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[14] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[15] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[16] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[17] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[18] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[19] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[20] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[21] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[22] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[23] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[24] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[25] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[26] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[27] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[28] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[29] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[30] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[31] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[32] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[33] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[34] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[35] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[36] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[37] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[38] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[39] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[40] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[41] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[42] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[43] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[44] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[45] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[46] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[47] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[48] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[49] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[50] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[51] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[52] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[53] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[54] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[55] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[56] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[57] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[58] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[59] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[60] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[61] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[62] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[63] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[64] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[65] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[66] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[67] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[68] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[69] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[70] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[71] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[72] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[73] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[74] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[75] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[76] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[77] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[78] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[79] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[80] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[81] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[82] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[83] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[84] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[85] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[86] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[87] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[88] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[89] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[90] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[91] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[92] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[93] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[94] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[95] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[96] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+WARNING: [Synth 8-6014] Unused sequential element out_BMP_reg[97] was removed.  [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:49]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'image_write' (2#1) [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'tb_simulation' (3#1) [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v:8]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R0[0]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G0[0]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B0[0]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_R1[0]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_G1[0]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[7]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[6]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[5]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[4]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[3]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[2]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[1]
+WARNING: [Synth 8-3331] design image_write has unconnected port DATA_WRITE_B1[0]
+WARNING: [Synth 8-3331] design image_read has unconnected port S
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[7]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[6]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[5]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[4]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[3]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[2]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[1]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 505.070 ; gain = 247.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 505.070 ; gain = 247.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 505.070 ; gain = 247.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ctrl_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[0]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[1]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[2]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[3]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[4]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[5]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[6]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[7]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[8]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[9]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[10]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[11]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[12]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[13]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[14]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[15]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[16]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[17]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[18]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[19]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[20]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[21]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[22]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[23]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[24]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[25]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[26]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[27]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[28]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[29]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[30]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[31]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[32]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[33]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[34]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[35]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[36]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[37]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[38]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[39]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[40]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[41]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[42]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[43]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[44]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[45]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[46]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[47]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[48]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[49]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[50]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[51]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[52]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[53]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[54]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[55]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[56]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[57]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[58]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[59]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[60]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[61]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[62]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_R_reg[63]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:97]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[0]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[1]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[2]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[3]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[4]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[5]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[6]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[7]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[8]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[9]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[10]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[11]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[12]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[13]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[14]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[15]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[16]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[17]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[18]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[19]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[20]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[21]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[22]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[23]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[24]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[25]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[26]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[27]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[28]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[29]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[30]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[31]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[32]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[33]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[34]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+WARNING: [Synth 8-327] inferring latch for variable 'org_G_reg[35]' [C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v:98]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 505.070 ; gain = 247.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 22    
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module image_read 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 5     
+	   3 Input      8 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 22    
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module image_write 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "nstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "row" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design image_read has unconnected port S
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[7]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[6]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[5]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[4]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[3]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[2]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[1]
+WARNING: [Synth 8-3331] design image_read has unconnected port LOC[0]
+WARNING: [Synth 8-3332] Sequential element (u_image_read/start_reg) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][31]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][30]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][29]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][28]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][27]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][26]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][25]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][24]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][23]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][22]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][21]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][20]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][19]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][18]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][17]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][16]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][15]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][14]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][13]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][12]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][11]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][10]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][9]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][8]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][7]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][6]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][5]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][4]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][3]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][2]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][1]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[0][0]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][31]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][30]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][29]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][28]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][27]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][26]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][25]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][24]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][23]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][22]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][21]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][20]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][19]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][18]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][17]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][16]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][15]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][14]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][13]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][12]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][11]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][10]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][9]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][8]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][7]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][6]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][5]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][4]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][3]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][2]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][1]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[1][0]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][31]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][30]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][29]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][28]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][27]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][26]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][25]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][24]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][23]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][22]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][21]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][20]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][19]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][18]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][17]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][16]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][15]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][14]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][13]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][12]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][11]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][10]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][9]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][8]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][7]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][6]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][5]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][4]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][3]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][2]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][1]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[2][0]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[3][31]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[3][30]) is unused and will be removed from module tb_simulation.
+WARNING: [Synth 8-3332] Sequential element (u_image_read/org_R_reg[3][29]) is unused and will be removed from module tb_simulation.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6938 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 546.473 ; gain = 288.871
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 373 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 650.746 ; gain = 405.965
+INFO: [Common 17-1381] The checkpoint 'C:/Users/adity/Desktop/WATER/basic_algo64x64/basic_algo64x64.runs/synth_1/tb_simulation.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tb_simulation_utilization_synth.rpt -pb tb_simulation_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.723 . Memory (MB): peak = 650.746 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 16 15:14:43 2019...

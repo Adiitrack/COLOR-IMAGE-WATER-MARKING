@@ -1,0 +1,16 @@
+Vivado Simulator 2018.1
+Copyright 1986-1999, 2001-2017 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.1/bin/unwrapped/win64.o/xelab.exe -wto 1332fb7aa65346acb23f7ad48cf6e8a8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_simulation_behav xil_defaultlib.tb_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/adity/Desktop/WATER/BASIC_ALGO64X64DE/BASIC_ALGO64X64DE.srcs/sim_1/new/READ_IMAGE.v" Line 2. Module READ_IMAGE doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/adity/Desktop/WATER/BASIC_ALGO64X64DE/BASIC_ALGO64X64DE.srcs/sim_1/new/WRITE_IMAGE.v" Line 4. Module WRITE_IMAGE doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.READ_IMAGE
+Compiling module xil_defaultlib.WRITE_IMAGE
+Compiling module xil_defaultlib.tb_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_simulation_behav

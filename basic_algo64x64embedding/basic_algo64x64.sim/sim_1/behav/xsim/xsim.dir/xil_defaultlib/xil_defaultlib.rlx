@@ -1,0 +1,9 @@
+0.6
+2018.1
+Apr  4 2018
+19:30:32
+C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_read.v,1576218761,verilog,,C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v,C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/parameter.v,image_read,,,,,,,,
+C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/image_write.v,1576221769,verilog,,C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v,,image_write,,,,,,,,
+C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/parameter.v,1576135996,verilog,,,,,,,,,,,,
+C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/tb_simulation.v,1576217180,verilog,,,C:/Users/adity/Desktop/WATER/BASIC_ALGORITHM/parameter.v,tb_simulation,,,,,,,,
+C:/Users/adity/Desktop/WATER/basic_algo64x64/basic_algo64x64.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,,,,,,,
